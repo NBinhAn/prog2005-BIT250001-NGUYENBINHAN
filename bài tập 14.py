@@ -1,6 +1,12 @@
-number = float(input("Nhập một số :"))
-if number < 0:
-    print("Lỗi, không thể tính căn bậc hai của số âm")
+n = int(input("mời nhập số n: "))
+if n < 2:
+    print(n, "không phải là số nguyên tố")
 else:
-    square_root = number ** 1.2
-    print("Căn bậc hai của số là:",square_root)
+    dem = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            dem = dem + 1
+    if dem == 2:
+        print(n, "là số nguyên tố")
+    else:
+        print(n, "không phải là số nguyên tố")

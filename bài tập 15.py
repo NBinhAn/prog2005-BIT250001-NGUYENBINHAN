@@ -1,10 +1,7 @@
-for i in range(1, 4):
-    print("Sinh viên",i)
-    name = input("Nhập tên sinh viên:")
-    math = float(input("Nhập điểm toán:"))
-    physics = float(input("Nhập điểm lý:"))
-    chemsitry = float(input("Nhập điểm hóa:"))
-    average =(math + physics + chemsitry)/3
-    print("Tên học sinh:",name)
-    print("Điểm trung bình của ba môn:",average)
-    print("--------------------------")
+n = int(input("mời nhập số nguyên dương: "))
+tong = 0
+while n > 0:
+    chu_so = n % 10
+    tong = tong + chu_so
+    n = n // 10
+print("tổng các chữ số là:", tong)
